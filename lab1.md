@@ -65,7 +65,7 @@
    * The working directory was `/home` when the command was run.
    * There was no output, because the terminal is waiting for the user to pass arguments. This is because
      arguments are required for this command to properly run.
-   * The output it not an error, since the command didn't run.
+   * The output is not an error, since the command didn't run.
 3. Example of using the command with a path to a *directory* as an argument
    * ```
      [user@sahara ~]$ cat lecture1
