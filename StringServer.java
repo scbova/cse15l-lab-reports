@@ -7,12 +7,24 @@ class Handler implements URLHandler {
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
-            return "Strings: " + ans.toString();
+            return ans;
         } else if (url.getPath().contains("/add-message")) {
             String[] parameters = url.getQuery().split("=");
 
             if (parameters[0].equals("s")) {
-                ans += \n + sequ + ". " parameters[1];
+                String[] param = parameters[1].split("[+]");
+
+                if (sequ == 1) {
+                    ans += sequ + ". ";
+                } else {
+                    ans += "\n" + sequ + ". ";
+                }
+
+                for (int i = 0; i < param.length - 1; i++) {
+                    ans += param[i] + " ";
+                }
+
+                ans += param[param.length - 1];
                 sequ++;        
 
                 return ans;
