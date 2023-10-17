@@ -64,7 +64,7 @@ class StringServer {
 ![Image](StringServer_Hello.png)
 * The `handleRequest` method is called
 * The argument to that method is `URI url`, which in this case was `https://<domain>/add-message?s=Hello`
-* The method reads in the `URI` and splits the query (the part after `?`) at the `=`, causing the url to be split into a `String` array. In this case, the `Hello` gets added to the answer `String`, while the `int` that is counting the sequence increases one.
+* The method reads in the `URI` and splits the query (the part after `?`) at the `=`, causing the url to be split into a `String` array. In this case, the `Hello` gets added to the answer `String`, while the `int` that is counting the sequence increases by one.
 
 
 ![Image](StringServer_HowAreYou.png)
