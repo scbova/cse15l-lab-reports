@@ -75,3 +75,23 @@ class StringServer {
 ---
 
 ### Part 2:
+
+Path to the *private* key for my SSH key for logging into `ieng6`:
+* Path = `/Users/scarlettbova/.ssh/id_rsa`
+
+![Image](privatekey.png)
+
+
+Path to the *public* key for my SSH key for logging into `ieng6`:
+* Path = `/Users/scarlettbova/.ssh/id_rsa.pub`
+
+![Image](publickey.png)
+
+
+Terminal interaction logging into `ieng6` with my course-specific account without being asked for a password:
+
+![Image](loginNoPW.png)
+
+---
+
+### Part 3:
