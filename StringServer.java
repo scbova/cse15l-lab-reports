@@ -12,7 +12,7 @@ class Handler implements URLHandler {
             String[] parameters = url.getQuery().split("=");
 
             if (parameters[0].equals("s")) {
-                String[] param = parameters[1].split("[+]");
+                parameters = parameters[1].split("[+]");
 
                 if (sequ == 1) {
                     ans += sequ + ". ";
@@ -20,11 +20,11 @@ class Handler implements URLHandler {
                     ans += "\n" + sequ + ". ";
                 }
 
-                for (int i = 0; i < param.length - 1; i++) {
-                    ans += param[i] + " ";
+                for (int i = 0; i < parameters.length - 1; i++) {
+                    ans += parameters[i] + " ";
                 }
 
-                ans += param[param.length - 1];
+                ans += parameters[parameters.length - 1];
                 sequ++;        
 
                 return ans;
