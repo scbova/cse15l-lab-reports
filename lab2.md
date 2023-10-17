@@ -95,3 +95,5 @@ Terminal interaction logging into `ieng6` with my course-specific account withou
 ---
 
 ### Part 3:
+
+One thing I learned in Lab 2 was about the remote server. It is a very cool idea that I can run things from both my home computer as well as connect remotely to the computers in the CSE basement and run commands on that computer. This entire lesson has helped me better understand software in action and how anything I code can do much more than simply run in a terminal on my computer.
