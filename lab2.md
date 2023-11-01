@@ -85,7 +85,7 @@ Path to the *private* key for my SSH key for logging into `ieng6`:
 Path to the *public* key for my SSH key for logging into `ieng6`:
 * Path = `/home/linux/ieng6/cs15lfa23/cs15lfa23dx/.sshid_rsa.pub`
 
-![Image](publickey.png)
+![Image](publickeyPath.png)
 
 
 Terminal interaction logging into `ieng6` with my course-specific account without being asked for a password:
