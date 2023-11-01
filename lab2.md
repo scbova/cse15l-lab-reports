@@ -83,7 +83,7 @@ Path to the *private* key for my SSH key for logging into `ieng6`:
 
 
 Path to the *public* key for my SSH key for logging into `ieng6`:
-* Path = `/Users/scarlettbova/.ssh/id_rsa.pub`
+* Path = `/home/linux/ieng6/cs15lfa23/cs15lfa23dx/.sshid_rsa.pub`
 
 ![Image](publickey.png)
 
