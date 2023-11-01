@@ -63,13 +63,13 @@ class StringServer {
 
 ![Image](StringServer_Hello.png)
 * The `handleRequest` method is called
-* The argument to that method is `URI url`, which in this case was `https://<domain>/add-message?s=Hello`
+* The argument to that method is `URI url`, which in this case was `https://<domain>/add-message?s=Hello`. With this, the if statement sees that path of the url contains `/add-message`. The message `Hello` then gets added to the `ans` and displayed on screen, with `sequ` equaling `1`.
 * The method reads in the `URI` and splits the query (the part after `?`) at the `=`, causing the url to be split into a `String` array. In this case, the `Hello` gets added to the answer `String`, while the `int` that is counting the sequence increases by one.
 
 
 ![Image](StringServer_HowAreYou.png)
 * The `handleRequest` method is called
-* The argument to that method is `URI url`, which in this case was `https://<domain>/add-message?s=How are you`
+* The argument to that method is `URI url`, which in this case was `https://<domain>/add-message?s=How are you`. With this, the if statement sees that path of the url contains `/add-message`. The message `How are you` then gets added to the `ans` and displayed on screen below the other message that had been previously added, with `sequ` now equaling `2`.
 * The method reads in the `URI` and splits the query (the part after `?`) at the `=`, causing the url to be split into a `String` array. In this case, the part that we want to add to the answer `String` then gets split again at the spaces, represented by `[+]`. Finally, `How are you` gets added to the answer `String`, while the `int` that is counting the sequence increases by one.
 
 ---
