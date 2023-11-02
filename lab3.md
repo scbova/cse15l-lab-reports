@@ -56,8 +56,8 @@
 ---
 ### Part 2: Researching Commands
 `grep`
-* Four interesting command-line options:
-  1. `-i`: This command ignores cases, meaning that it will search for any match regardless of uppercases or lowercases.
+Four interesting command-line options:
+1. `-i`: This command ignores cases, meaning that it will search for any match regardless of uppercases or lowercases.
      ```
      ~/Documents/GitHub/docsearch/technical/911report> grep "ohio" -i chapter-1.txt
      The hijackers attacked at 9:28. While traveling 35,000 feet above eastern Ohio, United 93 suddenly dropped 700 feet. Eleven seconds into the descent, the FAA's air traffic control center in Cleveland received the first of two radio transmissions from the aircraft. During the first broadcast, the captain or first officer could be heard declaring "Mayday" amid the sounds of a physical struggle in the cockpit. The second radio transmission, 35 seconds later, indicated that the fight was continuing. The captain or first officer could be heard shouting:" Hey get out of here-get out of here-get out of here."
@@ -77,8 +77,7 @@
                 whose persistence and dedication helped create the Commission. They have been with
      ```
      * This found all of the matches to "commission", since they all had an uppercase 'C'.
-       
-  2. `-n`: This command prints the line numbers as well as the matching lines to the search. This could be helpful if you want to reference where the match is located.
+2. `-n`: This command prints the line numbers as well as the matching lines to the search. This could be helpful if you want to reference where the match is located.
      ```
      ~/Documents/GitHub/docsearch/technical/government/Alcohol_Problems> grep "excess" -n Session3-PDF.txt
       243:and patient plans to address excessive drinking. Prototypic
@@ -86,18 +85,17 @@
       1045:excessively. Second, the ED is a fast-paced environment in which
      ```
      * This provided the line numbers with any line that contained "excess".
- 
-    ```
-    ~/Documents/GitHub/docsearch/technical/government/Alcohol_Problems> grep "negative cons" -n Session3-PDF.txt
-    27:and other negative consequences of drinking. This review will
-    60:that negative consequences can be directly linked to a behavior.17
-    785:negative consequences surrounding it and that in essence we, as
-    876:alcohol consumption or decreases in negative consequences, such as
-    1222:alcohol-related negative consequences and injuries at 1 year.
-    ```
+
+     ```
+       ~/Documents/GitHub/docsearch/technical/government/Alcohol_Problems> grep "negative cons" -n Session3-PDF.txt
+      27:and other negative consequences of drinking. This review will
+      60:that negative consequences can be directly linked to a behavior.17
+      785:negative consequences surrounding it and that in essence we, as
+      876:alcohol consumption or decreases in negative consequences, such as
+      1222:alcohol-related negative consequences and injuries at 1 year.
+     ```
      * This showed all of the lines and line numbers with the term "negative cons".
- 
-  3. `-w`: This command requires that the match is exact to the word. This is useful for searching when you don't want to see the answers that simply contain the search inside of the word.
+3. `-w`: This command requires that the match is exact to the word. This is useful for searching when you don't want to see the answers that simply contain the search inside of the word.
      ```
       ~/Documents/GitHub/docsearch/technical/biomed> grep "are" -w 1471-213X-2-1.txt
         the forebrain are well documented [ 11 12 13 14 ] .
@@ -130,8 +128,7 @@
         extracellular matrix where it is likely that the
      ```
      * This printed out lines with the exact word "it".
-
-  4. `-v`: This command prints the lines that don't contain the word. This could be useful for inverse searches.
+4. `-v`: This command prints the lines that don't contain the word. This could be useful for inverse searches.
      ```
      ~/Documents/GitHub/docsearch/technical/government/Gen_Account_Office> grep "a" -v og97032.txt   
 
