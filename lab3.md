@@ -196,4 +196,4 @@ Four interesting command-line options:
      ```
      * This printed out all of the lines that didn't contain the letter "a". It ignored cases, since I did the command `-vi`.
   
-Source: https://docs.rackspace.com/docs/use-the-linux-grep-command
+Source: [https://docs.rackspace.com/docs/use-the-linux-grep-command]
